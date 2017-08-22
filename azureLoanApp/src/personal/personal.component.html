@@ -1,0 +1,81 @@
+ <div class="container-fluid">
+        <div class="board">
+        <msw-navbar></msw-navbar>
+
+
+
+            <!-- Navigation Area (Circular Tabs) -->
+            
+            <!-- End Navigation Area (Circular Tabs) -->
+
+            <!-- Content Area -->
+            <div class="tab-content">
+                <!-- Nested view  -->
+               <form #personalForm="ngForm" (ngSubmit)="saveInfo(personalForm.value)"  class="editForm" novalidate>
+    <div class="tab-pane fade in active">
+        
+       <br/>
+        <div>
+            
+           <div class="quickquote">
+                <h1>Get your personal loan quote in just seconds</h1>
+                <div class="title">We need a little info to see if you qualify for discounts.</div>
+                <div class="content">
+                    <form [formGroup] = "loanInfoForm"  (ngSubmit) = "saveInfo(loanInfoForm.value)" autocomplete="off">
+                    <div class="paraone">
+                        <!--<p>I live in <typeahead  [(ngModel)]="stateList" formControlName ="stateList" name="stateList"  required id="stateList" [typeAheadSetup]="typeAheadSetup"></typeahead> & work in <typeahead   [(ngModel)]="work" value="" name="work" id="work" formControlName="work" required  [typeAheadSetup]="typeAheadSetup1"></typeahead></p>-->
+                        <p>I live in <input type="text" required value="" id="stateList"  name="stateList"  formControlName ="stateList" required> & work in <input type="text" required value="" id="work"  name="work"  formControlName ="work" required></p>
+                    </div>
+                    <div class="paratwo">I make &pound; <input type="number" required value="" id="sal"  name="sal"  formControlName ="sal" required> per month.</div>
+                    <div class="parathree"> I'd like a personal loan for &pound;<input type="number" value="" id="loanamt" formControlName ="loanamt" name="loanamt" required></div>
+                   
+                    <div>
+                       <span (mouseenter)="mouseoverlogin=true" (mouseleave)="mouseoverlogin=false"> <button  type="submit" class="btn btn-success btn-outline-rounded btn-info"   [disabled]="!personalForm.valid"> Get Quote</button></span> </div>
+                    </form>
+                     <div class ='container error'>
+             <span>
+                <a *ngIf="(stateList?.invalid && (stateList?.touched || mouseoverlogin))" href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Please enter place of living</a><br>
+                <a *ngIf="(work?.invalid && (work?.touched || mouseoverlogin))" href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Please enter place of work</a><br>
+                <a *ngIf="(sal?.invalid && (sal?.touched || mouseoverlogin))" href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Please enter your salary</a><br>
+                <a *ngIf="(loanamt?.invalid && (loanamt?.touched || mouseoverlogin))" href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Please enter your loan amount</a>
+             </span>
+        </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Modal -->
+ <!--  <div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">Know Your Quote! </h4>
+</div>
+<div class="modal-body">
+    Your Quote: {{quoteData?.quoteID}}
+</div>
+<div class="modal-footer">
+<div>
+<button type="button" (click)="myFunc()" class="btn btn-primary" data-dismiss="modal" >ok</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal">cancel</button>
+</div>
+
+    </div>
+                
+            </div>
+            <!-- End Content Area 
+        </div>
+
+        <!-- For Debugging: show our valid formData -->
+        <!--<pre>{{ formData | json }}</pre>
+    </div>-->
+
+
+
+
+
+
+

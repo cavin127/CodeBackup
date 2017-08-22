@@ -1,0 +1,19 @@
+.tab-content .tab-pane {
+    padding-top: 0px;
+    background-color: #a7acaf;
+    padding-bottom: 48px;
+    padding-top: 10px;
+    height: 410px;
+}
+.alert {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.ng-valid[required], .ng-valid.required  {
+ 
+}
+.ng-invalid:not(form)  {
+ 
+}
+

@@ -1,0 +1,57 @@
+ <header class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">EVENT PORTAL</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="#">Home</a></li>
+                        <li><a [routerLink] ="['/events/new']" routerLinkActive="active">Create Event</a></li>
+                        <li><a [routerLink] ="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">List Events</a></li>
+                        
+                         
+                        <li><a *ngIf="!auth.isAuthenticated()" [routerLink] ="['user/login']">Login</a>
+
+                         <!--<li><a modal-trigger = "userResults">About</a>-->
+                        <a  *ngIf="auth.isAuthenticated()" [routerLink] ="['user/profile']">Welcome {{auth?.sessFname}}</a>
+                        </li>  
+                        <!--<li><button type="button" class="btn btn-info btnstyle" data-toggle="modal" data-target="#myModal">Login</button></li>-->
+                    </ul>
+                    <form id= "searchForm" [formGroup] = "searchForm"  role="form" (ngSubmit) = searchSessions(searchItem)  class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" required [(ngModel)] = "searchItem" formControlName="searchBox" name="searchBox" id="searchBox" class="form-control" placeholder="Search...">
+                        </div>
+                        <button type="submit" [disabled]="searchForm.invalid" class="btn btn-default" modal-trigger = "searchResults" >Submit</button>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+
+          
+        </nav>
+    </header>
+
+    <simple-modal closeOnBodyClick = "true" title ="Matching Sessions" elementId ="searchResults">
+        <div class="list-qroup">
+            <a class="list-group-item" *ngFor = "let session of foundSessions" [routerLink] = "['/events',session.eventId]">{{session.name}}</a>
+            
+        </div>
+    </simple-modal>
+
+        <simple-modal title ="About" elementId ="userResults">
+        <div class="list-qroup">
+            About...
+        </div>
+    </simple-modal>
+
+    

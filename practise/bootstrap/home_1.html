@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login1111111 with Google Account using JavaScript by CodexWorld</title>
+    <meta name="google-signin-client_id" content="31203680989-129o50p4fkqogj4k2kt842rurq25uk4h.apps.googleusercontent.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+    <script>
+    function onSuccess(googleUser) {
+        var profile = googleUser.getBasicProfile();
+
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
+        gapi.client.load('plus', 'v1', function () {
+            var request = gapi.client.plus.people.get({
+                'userId': 'me'
+            });
+            //Display the user details
+            request.execute(function (resp) {
+                console.log(resp.name);
+                var profileHTML = '<div class="profile"><div class="head">Welcome '+profile.getName()+'! <a href="javascript:void(0);" onclick="signOut();">Sign out</a></div>';
+                $('.userContent').html(profileHTML);
+                $('#gSignIn').slideUp('slow');
+            });
+        });
+    }
+    function onFailure(error) {
+        alert(error);
+    }
+    function renderButton() {
+        gapi.signin2.render('gSignIn', {
+            'scope': 'profile email',
+            'width': 240,
+            'height': 50,
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': onSuccess,
+            'onfailure': onFailure
+        });
+    }
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.disconnect();
+        auth2.signOut().then(function () {
+            $('.userContent').html('');
+
+           
+           
+               
+            console.log('User signed out.');
+            $('#gSignIn').slideDown('slow');
+        });
+    }
+    </script>
+</head>
+<body>
+    <!-- HTML for render Google Sign-In button -->
+    <div id="gSignIn"></div>
+    <!-- HTML for displaying user details -->
+    <div class="userContent"></div>
+
+
+</body>
+</html>

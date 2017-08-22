@@ -1,0 +1,518 @@
+
+
+a:hover{text-decoration: none;}
+.btn-default {
+    border-color: #ccc;
+}
+
+.tab-content .choice {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 38px;
+}
+
+.tab-content .choice i {
+    font-size: 32px;
+    line-height: 55px;
+}
+
+.btn-radio {
+	width: 100%;
+}
+.img-radio {
+	opacity: 0.8;
+	margin-bottom: 5px;
+}
+
+.space-20 {
+    margin-top: 20px;
+}
+
+/* active buttons */
+#status-buttons a.active span.round-tabs.one { 
+    background: #454748;
+    color: #fff;
+    border: 3px solid #a09c9c;
+}
+.round-tabs{background: #454748;}
+#status-buttons a.active span.round-tabs.two { 
+   
+    color: #fff; border: 3px solid #928f89;
+}
+
+#status-buttons a.active span.round-tabs.three { 
+   
+    color: #fff; border: 3px solid #928f89;
+}
+
+#status-buttons a.active span.round-tabs.four { 
+   
+    color: #fff; border: 3px solid #928f89;
+}
+
+
+.iradio_buttons {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: #febe29 no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.iradio_buttons {
+    background-position: -120px 0;
+}
+.iradio_buttons.hover {
+    background-position: -144px 0;
+}
+.iradio_buttons.checked {
+    background-position: -168px 0;
+}
+/********* FORM APPLICATION CSS *************/
+
+.nav p{text-align: center; font-size: 16px; font-weight: bold;}
+span.twitter-typeahead, .ng2typehead{width: auto!important;}
+.slider-input-block{display:none;} 
+body{overflow-x: hidden;}
+.container-fluid{padding:0px;}
+h1{color:#fff; font-size:32px; text-align: center}
+h3{ padding: 6px 0px;margin-left: 15px;    font-weight: bold;   border-bottom: 2px solid #bfbfbf;margin-top:25px; margin-bottom:20px}
+.quickquote h1{text-align: center;}
+.title{font-size:16px;text-align: center;color: #333;}
+
+.content{text-align: center; color: #fff;font-size: 30px;font-weight: 300;}
+.content input{    font-size: 24px;
+    background: none;
+    border: none;
+    /* border: 2px dotted; */
+    border-bottom: 2px dashed solid;
+    border-bottom: 1px dotted; outline: none;margin-left: 5px;}
+    input[type=submit]{font-size:40px;}
+    .btn.disabled, .btn[disabled], fieldset[disabled] .btn{opacity: 1;}
+    .btn{font-size: 22px;
+       background-color: #003d63!important;
+    color: #fff;
+    font-size: 24px!important;
+    border: none;margin-top: 35px;}
+    .btn:hover{
+    background: #585858!important;
+    outline: none;
+
+    }
+.active .round-tabs one{border:2px solid #ddd;}
+.error{width:300px;  font-size: 12px; color:red; position: relative;}
+.error span{
+    position: absolute;
+    left: 100%;
+    right: 0%;
+    width: 100%;
+    margin-top: -80px;
+    text-align: left;}
+    .error span a{    color: #003d63;
+    font-size: 14px;}
+    .alert{background:none; border:none;}
+     .error span a:hover{text-decoration: none;}
+     .strike{    text-decoration: line-through;
+        background: #a7acaf;padding-right: 10px;}
+#range_3_start, #range_1_start{display: inline-block;
+  
+    margin-left: 5px;}
+    .rangeleft{float: left}
+.rangeright{float: right}
+    #range_3_end, #range_1_end{
+        display: inline-block;
+    float: right;
+    margin-left: 5px;}
+
+    .btn-info:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+.personal_loan{margin-top: 35px;
+  border-top: 2px solid #bfbfbf;}
+
+th{font-weight: bold; text-align: center;line-height: 30px;}
+table{    width: 100%;
+    text-align: center;margin-top: 25px;}
+h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: left;
+}
+h2{text-align: left;
+    margin-left: 100px;
+    font-size: 25px;
+   }
+   td{font-size: 16px;}
+   .fa-thumbs-up{color:#003d63}
+
+a.act .arrowup {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 30%;
+    display: block;
+    bottom: -80px;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+        border-bottom: 24px solid rgb(167, 172, 175);
+}
+
+
+li a .arrowup{width: 0;
+    height: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #b19cbb;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    display: none;border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 24px solid #b19cbb;    bottom: -50px;}
+
+
+   .content  input[type="text"] { font-size:24px; width:180px; }
+    .round-tabs:hover{  background: #454748!important;}
+    .content  .paraone input[type="text"] { font-size:20px ; color:#333 !important ;width:180px}
+   .paratwo .ng-valid[required], .ng-valid.required {
+    color: #333;
+    font-size:20px !important}
+   .paratwo input {width:180px;color: #333;}
+    .parathree input {width:180px;color: #333;}
+   .parathree .ng-valid[required], .ng-valid.required {
+    color: #333;
+    width:180px;
+    font-size:20px !important}
+.content-text{  min-height: 606px;background-image: url(../images/bg.jpg); background-size: cover; width:100%; height: 100%; float:left;}
+.bgblur{ background-color: rgba(255, 253, 253, 0.2);
+    height: 100%;
+    width: 100%;
+    min-height: 606px;
+    position: absolute;
+   margin-top: -100px;
+    z-index: 1;}
+
+    .homeform
+    {
+    position: relative; z-index: 9;
+    }
+.content-text{color:#000;}
+.header{width: 100%;
+    float: left;
+    background: #a7acaf;padding-top: 10px;    position: relative;
+    z-index: 9;}
+
+    .nopadding{padding:0px;}
+.header h1{margin-top: 0px;
+    font-size: 32px;
+    color: #003d63;}
+.content-text .content{color:#000;    margin-top: 100px;}
+.fa-question{font-size: 40px;    color: #003d63;    margin-right: 15px;}
+.fa-file-text{margin-right: 10px;}
+/* all */
+.content ::-webkit-input-placeholder { color:#777; font-size: 20px;}
+.content ::-moz-placeholder { color:#fff; font-size: 30px;} /* firefox 19+ */
+.content :-ms-input-placeholder { color:#fff; font-size: 30px;}/* ie */
+.content :-moz-placeholder { color:#fff; font-size: 30px;}
+
+
+.personaldata ::-webkit-input-placeholder { color:#555; font-size: 12px; }
+.personaldata ::-moz-placeholder { color:#555; font-size: 12px;} /* firefox 19+ */
+.personaldata :-ms-input-placeholder { color:#555; font-size: 12x;}/* ie */
+.personaldata :-moz-placeholder { color:#555; font-size: 12px;}
+
+
+select option { color:#555; }
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+  
+           background-color: #efefef;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-radius: 0px;
+    border: 1px solid #efefef;
+
+
+}
+
+/********** Vertical Tabs For completion form ************/
+
+
+.tabordion {
+  color: #333;
+  display: block;
+  
+  margin: auto;
+  position: relative;
+  width: 80%;
+  min-height: 320px;
+ background: #a7acaf;
+}
+
+.tabordion input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.tabordion section {
+  display: block;
+}
+
+.tabordion section label {
+     background: #777;
+    /* border: 1px solid #fff; */
+    cursor: pointer;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 4px 0px;
+    position: relative;
+    width: 210px;
+    z-index: 100;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.form-group label{background: none!important;display: inline-block!important; width:auto!important; font-weight:normal!important; margin-left:0px!important;margin-top:15px;}
+.form-group {
+    margin-bottom: 0px;
+}
+.tabordion label h3{margin-top: 5px;
+    margin-bottom: 5px;
+    font-size:16px;
+    border-bottom: none;
+    color: #fff;width: 100%;}
+.tabordion section article {
+  display: none;
+  left: 230px;
+  min-width: 300px;
+  padding: 0 0 0 21px;
+  position: absolute;  
+  top: 0;
+  background: #a7acaf;
+}
+
+article{min-height:370px;}
+.tabordion section article:after {
+ 
+     bottom: 0;
+   
+    display: block;
+    left: -230px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    z-index: 1;
+    background: #a7acaf;
+}
+
+.tabordion input[name="sections"]:checked + label { 
+  background: #003d63;
+    color: #fff9f9;
+}
+
+.tabordion input[name="sections"]:checked ~ article {
+  display: block;
+}
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-top: 0;
+    margin-left: 30px;
+}
+.control-label{margin-left: 0px!important;}
+/*custom radio*/
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #d3dde6;
+  border: none;
+  color: #b93030;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+  border: 1px solid #4c545b !important;
+  border-radius: 50%;
+  margin: 2px 15px !important;
+}
+.option-input:hover {
+  background: #d3dde6;
+}
+.option-input:checked {
+  background: #d3dde6;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+@media (max-width: 533px) {
+  
+ 
+
+  .tabordion {
+    width: 100%;
+  }
+  
+  .tabordion section label {
+    font-size: 1em;
+    width: 160px;
+  }  
+
+ .tabordion section article {
+    left: 200px;
+    min-width: 270px;
+  } 
+  
+  .tabordion section article:after {
+    background-color: #ccc;
+    bottom: 0;
+    
+    display: block;
+    left:-199px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+  }  
+  
+}
+
+
+@media (max-width: 768px) {
+  
+  .tabordion {
+    width: 96%;
+  }
+}
+
+
+@media (min-width: 1366px) {
+ 
+  .tabordion {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.arrowleft{display:none;}
+.tabordion input[name="sections"]:checked + label .arrowleft{    display: block;
+    text-align: right;
+    
+    margin-top: -17px;
+    font-weight: normal;
+    margin-left: -17px;
+    margin-right:2px;
+    color: #003d63;}
+
+    /********* END FORM APPLICATION CSS *************/
+    
+  /********* Responsive *************/
+
+  @media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media (max-width: 585px){
+    .nav p {
+   
+    font-size: 12px;
+    
+}
+
+span.round-tabs {
+    font-size: 16px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    
+}
+.liner {
+    
+    
+    top: 38%;
+   
+}
+
+.board .nav-tabs {
+  
+    margin: 0px auto;
+   
+}
+.slider1, .slider2{float:none!important;}
+.nav-tabs > li a {
+     width: 65px;
+    height: 65px;
+    line-height: 65px;
+}
+.error span {
+   
+    left: 80%;
+   
+}
+.error span a{
+    font-size: 10px;
+}
+.board {
+    width: 100%;
+    
+}
+}
+     /********* End Responsive *************/
+
+     

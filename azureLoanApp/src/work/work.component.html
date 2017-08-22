@@ -1,0 +1,100 @@
+ <div class="container-fluid">
+        <div class="board">
+<msw-navbar></msw-navbar>
+<div class="tab-content">
+<form #workForm="ngForm" class="editForm" novalidate>
+    <div class="form-horizontal">
+        <div class="tab-pane fade in active">
+            
+            <br/>
+            <div>
+                <div class='container' align="center">
+                   <div class="slider1" style="width:300px; float:left">
+<h1>Loan Amount (&pound;)</h1>
+  <ion-range-slider #advancedSliderElement
+          type="double"
+          min="1000"
+          max="100000"
+          from="1000"
+          
+          to="100000"
+          
+          postfix="  pounds"
+          decorate_both="true"
+          (onUpdate)="update(advancedSlider, $event)"
+          (onChange)="update(advancedSlider, $event)"
+          (onFinish)="finish(advancedSlider, $event)"></ion-range-slider>
+           
+           <p class="value-box">
+         
+     <span class="rangeleft" *ngIf="addMode"><b>Min Eligible.</b><span class="value-span" id="range_3_start">{{advancedSlider.onUpdate?.from}}</span></span> <span class="rangeright" *ngIf="addMode"> <b>Max Eligible.</b><span class="value-span" id="range_3_end">{{advancedSlider.onUpdate?.to}}</span></span>
+</p>
+                       </div>
+
+    <div class="slider2" style="width:300px; float:right"> 
+    <h1>Loan Amount (&pound;)</h1>
+  <ion-range-slider #advancedSliderElement1
+          type="double"
+          min="0"
+          max="100000"
+          from="1000"
+          from_min="0"
+          from_max="50000"
+          from_shadow="false"
+          to="100000"
+          to_min="5000"
+          to_max="100000"
+          
+          postfix=" pounds"
+          decorate_both="true"
+          (onUpdate)="update1(advancedSlider1, $event)"
+          (onChange)="update1(advancedSlider1, $event)"
+          (onFinish)="finish1(advancedSlider1, $event)"></ion-range-slider>
+
+           <p class="value-box">
+     <span class="rangeleft" *ngIf="addMode1"><b>Min Eligible </b><span class="value-span" id="range_3_start">{{advancedSlider1.onUpdate?.from}}</span></span> <span class="rangeright" *ngIf="addMode1"> <b>Max Eligible </b><span class="value-span" id="range_3_end">{{advancedSlider1.onUpdate?.to}}</span></span>
+</p>
+                       </div> 
+
+                      
+                   
+                    
+  
+  
+                </div>
+            </div>
+
+            <div class="personal_loan">
+               <h2>Your customized loan</h2>
+
+                <table>
+
+<tr>
+
+    <th>EMI</th>
+    <th>Interest Rate</th>
+    <th>Fees</th>
+    <th>You Save</th>
+
+</tr>
+
+<tr>
+
+    <td><span class="strike">&pound; 110</span> &pound; {{emi}}</td>
+    <td><span class="strike">3.5% Fixed</span>{{interestRate}}% Fixed</td>
+    <td><span class="strike">&pound; 100</span>&pound; 90</td>
+    <td><i class="fa fa-thumbs-up" aria-hidden="true"></i> &pound; 24</td>
+
+</tr>
+                    </table>
+                </div>
+            <div class="form-group text-center space-20">
+                <!--<button uiSref="loan" class="btn btn-outline-rounded btn-default" (click)="save(workForm)"> <span style="margin-right:10px;" class="glyphicon glyphicon-arrow-left"></span> Previous</button>-->
+                <button class="btn btn-outline-rounded btn-info"  (click)="saveForm()">Next</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+</div>
