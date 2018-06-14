@@ -1,0 +1,8 @@
+py -m pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org beautifulsoup4
+
+pip install requests
+
+
+
+py -m pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pandas
+
