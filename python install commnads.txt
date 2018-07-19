@@ -6,3 +6,17 @@ pip install requests
 
 py -m pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pandas
 
+====================================
+
+
+===========================================
+
+npm config ls -l
+npm config set strict-ssl false
+
+npm config set https-proxy http://user:pass@192.168.100.40:8080 
+
+npm config set proxy http://user:pass@192.168.100.40:8080
+
+
+
